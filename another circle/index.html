@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>circles</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a id="tweet" target="_BLANK" href="https://twitter.com/intent/tweet?text=I%20got%20a%200%20path%20streak%20on%20@path_tracer%20http://goo.gl/zzv5pQ%20a%20CodePen%20from%20@zapplebee">TWEET YOUR TOP STREAK: <span id="streak">0</span></a>
+<h1 id="title">Path Tracer</h1>
+<svg viewBox="0 0 600 600">
+<defs>
+
+  <clipPath id="clipPath">
+    <circle cx="300" cy="300" r="300"/>
+  </clipPath>
+  
+</defs>
+  <g clip-path="url(#clipPath)">
+<circle id="container" cx="300" cy="300" r="270" fill="none"/>
+<path id="tracer" stroke="#40d3d1" stroke-width="10" fill="none"/>
+<path id="demo" stroke="#ddd" stroke-width="10" fill="none"/>
+<circle class="connector" cx="300" cy="50" r="50" fill="#ddd"/>
+<circle class="connector" cx="517" cy="175" r="50" fill="#ddd"/>
+<circle class="connector" cx="517" cy="425" r="50" fill="#ddd"/>
+<circle class="connector" cx="300" cy="550" r="50" fill="#ddd"/>
+<circle class="connector" cx="83" cy="425" r="50" fill="#ddd"/>
+<circle class="connector" cx="83" cy="175" r="50" fill="#ddd"/>
+<circle class="connector" cx="300" cy="300" r="50" fill="#ddd"/>
+
+<circle id="finger" cx="300" cy="300" r="50" fill="#ddd"/>
+
+
+  </g>
+</svg>
+<script src="js.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temparature</title>
+</head>
+<script type="text/javascript">
+	function celsconv() {
+  document.convert.result.value=Math.round(((document.convert.temp.value) * 9/5 + 32) * 10) / 10;
+}
+
+function fahrconv() {
+  document.convert.temp.value=Math.round(((((document.convert.result.value)- 32) * 5)/9) * 10) / 10;
+}
+
+if(document.layers) window.captureEvents(Event.KEYDOWN);
+function enterKey() {
+  if(event.keyCode==13) event.keyCode=9;
+}
+</script>
+<script type="text/javascript" src="temperatureConverter.js"></script>
+<body>
+<form name="convert">
+<h3>Temperature Converter</h3>
+<p>
+<b>1. </b> Write a temparature unit in either of the boxes.
+<br /><b>2. </b> Click enter on your keyboard and view the converted unit in the other box.</p>
+  <input style="text-align: right;" type="text" size="6" name="result" value="00" onChange="fahrconv()"; onKeyDown="enterKey()" onFocus="select()"><b>Fahrenheit</b>
+  <br>
+  <input style="text-align: right;" type="text" size="6" name="temp" value="00" onChange="celsconv()"; onKeyDown="enterKey()" onFocus="select()"><b>Centrigrade</b>
+</form>
+</body>
+</html>

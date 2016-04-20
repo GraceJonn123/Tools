@@ -1,0 +1,91 @@
+<html>
+<head>
+    <script language="javascript" defer>
+        var symbols = [
+              '\u263A', '\u2622', '\u2623', '\u2600', '\u2601', '\u2602', '\u2744', '\u2604',
+              '\u263A', '\u2622', '\u2623', '\u2600', '\u2601', '\u2602', '\u2744', '\u2604'];
+ 
+        var cellFirstId = '';
+        var cellSecondId = '';
+        var found = false;
+        var timeout = null;
+ 
+        function shuffle(array) {
+            return array.sort(function () { return 0.5 - Math.random() });
+        }
+ 
+        function drawTable() {
+            symbols = shuffle(symbols);
+ 
+            var tbod = document.getElementById('tbod');
+            for (var r = 0; r < 4; r++) {
+                var row = document.createElement('tr');
+                for (var c = 0; c < 4; c++) {
+                    var cell = document.createElement('td');
+                    var ct = document.createTextNode(symbols[(r * 4) + c]);
+                    cell.appendChild(ct);
+                    cell.id = "Cell" + r + c;
+                    cell.className = 'cellFormat';
+                    cell.onclick = cellClicked;
+                    row.appendChild(cell);
+                }
+                tbod.appendChild(row);
+            }
+        }
+ 
+        function cellClicked() {
+            if (this.style.color == '#ff0000' || timeout != null)
+                return;
+            this.style.color = '#ffffff'; // white
+            if (cellFirstId == '')
+                cellFirstId = this.id;
+            else {
+                cellSecondId = this.id;
+                var cellFirst = document.getElementById(cellFirstId);
+                if (cellFirstId == cellSecondId)
+                    found = false;
+                else if (cellFirst.firstChild.nodeValue != this.firstChild.nodeValue)
+                    found = false;
+                else
+                    found = true;
+                timeout = setTimeout(checkMatch, 2000);
+            }
+        }
+ 
+        function checkMatch() {
+            var cellFirst = document.getElementById(cellFirstId);
+            var cellSecond = document.getElementById(cellSecondId);
+            var newColor = '#000000'; // black
+            if (found)
+                newColor = '#00ff00' // green
+            cellFirst.style.color = newColor;
+            cellSecond.style.color = newColor;
+            cellFirstId = '';
+            cellSecondId = '';
+            clearTimeout();
+            timeout = null;
+        }
+ 
+    </script>
+    <style>
+        .cellFormat
+        {
+            background-color: Black;
+            color: Black;
+            font-size: 26pt;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Match Pairs of Symbols</h1>
+    <table>
+        <tbody id="tbod">
+        </tbody>
+    </table>
+    </p>
+    <a href='#' onclick='drawTable()'>Set Puzzle</a>
+</body>
+</html>

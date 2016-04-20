@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trial</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script type="text/javascript">
+  function celsconv() {
+  document.convert.result.value=Math.round(((document.convert.temp.value) * 9/5 + 32) * 10) / 10;
+}
+
+function fahrconv() {
+  document.convert.temp.value=Math.round(((((document.convert.result.value)- 32) * 5)/9) * 10) / 10;
+}
+
+if(document.layers) window.captureEvents(Event.KEYDOWN);
+function enterKey() {
+  if(event.keyCode==13) event.keyCode=9;
+}
+</script>
+<script type="text/javascript" src="temperatureConverter.js"></script>
+  <script type="text/javascript">
+
+// Length Converter script- By Bruce Zhang
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// Please keep this notice intact
+
+var factors1 = new Array(1, 0.01, 0.00001, 0.00000621, 0.3937, 0.0328, 0.01094);
+var factors2 = new Array(100, 1, 0.001, 0.000621, 39.37, 3.28,  1.094);
+var factors3 = new Array(100000, 1000, 1, 0.621, 39370, 3280, 1094);
+var factors4 = new Array(160934, 1609.34, 1.60934, 1, 63360, 5280,1760);
+var factors5 = new Array(2.54, 0.0254, 0.0000254, 0.0000158, 1, 0.08333, 0.02778);
+var factors6 = new Array(30.48, 0.3048, 0.0003048, 0.0001896, 12, 1, 0.3333);
+var factors7 = new Array(91.44, 0.9144, 0.0009144, 0.0005688, 36, 3, 1);
+var factors = new Array(factors1,factors2,factors3,factors4,factors5,factors6,factors7);
+
+function convert_unit()
+{
+  from_index = document.length_con.from_unit.selectedIndex;
+  to_index = document.length_con.to_unit.selectedIndex;
+  factor = factors[from_index][to_index];
+  document.getElementById("formula").innerHTML = document.length_con.from_unit.options[document.length_con.from_unit.selectedIndex].text + " = " + factor + " " + document.length_con.to_unit.options[document.length_con.to_unit.selectedIndex].text;
+  if(isNaN(document.length_con.from_value.value))
+    document.getElementById("to_value").innerHTML = "Not a valid number.";
+  else
+    document.getElementById("to_value").innerHTML = factor * document.length_con.from_value.value;
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+<!--
+//    Script Editor:   Howard Chen
+//    Browser Compatible for the script: IE 3.0 or Higher
+//                                       Netscape 2.0 or Higher
+//    This script is free as long as you keep its credits
+/*The way this works is the converter converts the number
+into the smallest unit in the converter, in this case it will
+be gram, and then it converts the unit fram gram to other units.*/
+function nofocus()
+{
+document.convert.InUnit.focus()
+}
+var gValue = 1
+var kgValue = 1000
+var ounceValue = 28.3495
+var lbValue = 453.592
+var tValue = 907184
+function toCM()
+{
+var i = document.convert.unit.selectedIndex
+var thisUnit = document.convert.unit.options[i].value
+if (thisUnit == "G")
+        {
+document.convert.g.value = document.convert.InUnit.value
+        }
+else if(thisUnit == "KG")
+        {
+document.convert.g.value = document.convert.InUnit.value * kgValue
+        }
+else if(thisUnit == "OUNCE" )
+        {
+document.convert.g.value = document.convert.InUnit.value * ounceValue
+        }
+else if(thisUnit == "LB" )
+        {
+document.convert.g.value = document.convert.InUnit.value * lbValue
+        }
+else if(thisUnit == "T" )
+        {
+document.convert.g.value = document.convert.InUnit.value * tValue
+        }
+toAll()
+}
+function toAll()
+{
+var m = document.convert.g.value
+document.convert.kg.value = m / kgValue
+document.convert.ounce.value = m / ounceValue
+document.convert.lb.value = m / lbValue
+document.convert.t.value = m / tValue
+}
+//-->
+</script> 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript">
+var factors1 = new Array(1, 0.01, 0.00001, 0.00000621, 0.3937, 0.0328, 0.01094);
+var factors2 = new Array(100, 1, 0.001, 0.000621, 39.37, 3.28,  1.094);
+var factors3 = new Array(100000, 1000, 1, 0.621, 39370, 3280, 1094);
+var factors4 = new Array(160934, 1609.34, 1.60934, 1, 63360, 5280,1760);
+var factors5 = new Array(2.54, 0.0254, 0.0000254, 0.0000158, 1, 0.08333, 0.02778);
+var factors6 = new Array(30.48, 0.3048, 0.0003048, 0.0001896, 12, 1, 0.3333);
+var factors7 = new Array(91.44, 0.9144, 0.0009144, 0.0005688, 36, 3, 1);
+var factors = new Array(factors1,factors2,factors3,factors4,factors5,factors6,factors7);
+
+function convert_unit()
+{
+  from_index = document.length_con.from_unit.selectedIndex;
+  to_index = document.length_con.to_unit.selectedIndex;
+  factor = factors[from_index][to_index];
+  document.getElementById("formula").innerHTML = document.length_con.from_unit.options[document.length_con.from_unit.selectedIndex].text + " = " + factor + " " + document.length_con.to_unit.options[document.length_con.to_unit.selectedIndex].text;
+  if(isNaN(document.length_con.from_value.value))
+    document.getElementById("to_value").innerHTML = "Not a valid number.";
+  else
+    document.getElementById("to_value").innerHTML = factor * document.length_con.from_value.value;
+}
+</script>
+<script type="text/javascript">
+  function celsconv() {
+  document.convert.result.value=Math.round(((document.convert.temp.value) * 9/5 + 32) * 10) / 10;
+}
+
+function fahrconv() {
+  document.convert.temp.value=Math.round(((((document.convert.result.value)- 32) * 5)/9) * 10) / 10;
+}
+
+if(document.layers) window.captureEvents(Event.KEYDOWN);
+function enterKey() {
+  if(event.keyCode==13) event.keyCode=9;
+}
+</script>
+<script type="text/javascript" src="temperatureConverter.js"></script>
+<body ng-app="">
+
+My favorite topic is:
+<select ng-model="myVar">
+  <option value="weight">Weight
+  <option value="length">Length
+  <option value="temp">Temparature
+</select>
+
+<hr>
+<div ng-switch="myVar">
+  <div ng-switch-when="weight">
+      <!-- <ul class="tabs"> -->
+          <div id="tab-content1" class="tab-content">
+           <div class="weight" id="weight">
+        <h3>Weight Converter</h3><hr></br>
+      <center><p> This script creates a weight converter that can convert five different units at one time. <br>To use it, choose your unit at the first line and enter the a number in the box beside it, then click the convert button. <br>It automatically converts your choice to all five units.</p></center></br>
+      </br>
+      </br>
+
+          <div align="center">
+              <form name="convert">
+                  <table border=1>
+                      <tr><th>Unit</th><th>Number</th></tr>
+                          <tr>
+                                  <td>
+                                      <select name="unit">
+                                      <option value = "G">Gram
+                                      <option value = "KG">Kilogram
+                                      <option value = "OUNCE">Ounce
+                                      <option value = "LB">Pound
+                                      <option value = "T">U.S. Ton
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <input type="text" name="InUnit" size="20" maxlength="20" value="0">
+                                  </td>
+                          </tr>
+                          <tr>
+                                  <td>Gram:</td>
+                                  <td>
+                                      <input type="text" name="g" size="20" maxlength="20" value="0" onFocus="nofocus()">
+                                  </td>
+                          </tr>
+                          <tr>
+                                  <td>Kilogram:</td>
+                                  <td>
+                                      <input type="text" name="kg" size="20" maxlength="20" value="0" onFocus="nofocus()">
+                                  </td>
+                          </tr>
+                          <tr>
+                                  <td>Ounce:</td>
+                                  <td>
+                                      <input type="text" name="ounce" size="20" maxlength="20" value="0" onFocus="nofocus()">
+                                  </td>
+                          </tr>
+                           <tr>
+                                <td>Pound:</td>
+                                  <td>
+                                      <input type="text" name="lb" size="20" maxlength="20" value="0" onFocus="nofocus()">
+                                  </td>
+                          </tr>
+                          <tr>
+                                 <td>Tonne:</td>
+                                  <td>
+                                      <input type="text" name="t" size="20" maxlength="20" value="0" onFocus="nofocus()">
+                                  </td>
+                          </tr>
+                          <tr>
+                                  <td>
+                                      <input type="Reset" value="Start Over" width=100>
+                                  </td>
+                                  <td>
+                                      <input type="button" value="Convert" onClick="toCM()" width=150>
+                                  </td>
+                          </tr>
+                  </table>
+              </form>
+          </div>
+      </div>
+          </div>
+</div>
+
+
+<!-- ***************** Length converter begins here *************** -->
+
+
+  <div ng-switch-when="length">
+    <div id="tab-content3" class="tab-content">
+     <div class="length">
+      <h3>Length Converter</h3>
+      <hr><br>
+<p>
+<b>1. </b> Select a length unit from the "From" dropdown list and one from the "To" dropdown list.<br>
+<br><b>2. </b> Enter a numeric value, and click "To" button.
+<p><form name="length_con">
+<table>
+  <tr>
+    <td>From</td>
+    <td>
+      <select name=from_unit onChange="convert_unit()";>
+      <option> centimeters
+      <option> meters
+      <option> kilometers
+      <option> miles
+      <option> inches
+      <option> feet
+      <option> yards
+      </select>
+    </td>
+    <td>To</td>
+    <td>
+      <select name=to_unit onChange="convert_unit()";>
+      <option> centimeters
+      <option> meters
+      <option> kilometers
+      <option> miles
+      <option> inches
+      <option> feet
+      <option> yards
+      </select>
+    </td>
+  </tr><br>
+  <tr>
+    <td></td><td colspan="3"><div id="formula">centimeters = 1 centimeters</div></td>
+  </tr><br><br>
+  <tr>
+    <td colspan="4"></td>
+  </tr>
+
+  <tr>
+    <td>Enter</td>
+    <td><input type="text" name="from_value" value="1" size="12" maxlength="12"></td>
+    <td><input type=button value="To" onClick="convert_unit()";></td>
+    <td><div id="to_value">1</div></td>
+  </tr>
+
+  <tr>
+</table>
+
+</form>
+     </div>
+    </div>
+</div>
+
+<!-- ***************** Temparature converter begins here *************** -->
+
+  <div ng-switch-when="temp">
+
+    <div id="tab-content4" class="tab-content">
+     <form name="convert">
+<h3>Temperature Converter</h3><hr><br>
+<p>
+<b>1. </b> Write a temparature unit in either of the boxes.<br>
+<br /><b>2. </b> Click enter on your keyboard and view the converted unit in the other box.</p><br>
+  <input style="text-align: right;" type="text" size="6" name="result" value="00" onChange="fahrconv()"; onKeyDown="enterKey()" onFocus="select()"><b>Fahrenheit</b>
+  <br><br>
+  <input style="text-align: right;" type="text" size="6" name="temp" value="00" onChange="celsconv()"; onKeyDown="enterKey()" onFocus="select()"><b>Centrigrade</b>
+
+</form>
+    </div>
+
+</ul>
+</div>
+
+  <div ng-switch-default>
+     <h1>Converter</h1>
+     <h3>How to use the converter</h3>
+     <p>Pick a unit from the drop-down and the page shall switch to the unit chosen.</p>
+  </div>
+<hr>
+
+<p>We appreciate your use of AcmeTutor.</p>
+
+</div>
+
+<br style="clear: both;" />
+</body>
+</html>
