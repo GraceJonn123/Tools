@@ -18,9 +18,7 @@ p{
 .text{
   border: 2px solid white;
   position: absolute;
-
 }
-
 .container {
   position: fixed;
   margin: 500px;
