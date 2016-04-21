@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        html {
+            background-color: white;
+        }
+        body {
+            max-width: 60em;
+            margin: 1em auto;
+            border-radius: 2em;
+            padding: 1em;
+            text-align: center;
+        }
+        input, button {
+            font-size: 1.25em;
+            padding: 0.5em;
+            display: inline-block;
+        }
+        input[type="file"] {
+            border: 0.125em solid dodgerBlue;
+            border-radius: 0.5em;
+        }
+        #downloadLink {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .noMargin {
+            margin: 0;
+        }
+        .small {
+            font-size: small;
+        }
+    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Some of the best stuff!."/>
+    <title>Generate</title>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_PI/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="box1" style="">
+        <h2>Step 1: Upload Meme Template From Machine:</h2>
+        <input id="ifile" type="file"><br>
+    </div>
+
+
+    <div id="box2" style="display: none;">
+        <h2>Step 2: Write Top & Bottom Lines:</h2>
+        <input id="topline" placeholder="TOP LINE" style="color: black;"><br>
+        <br>
+        <input id="bottomline" placeholder="BOTTOM LINE"><br>
+        <br>
+
+
+        <canvas height="0" id="c" width="0">
+        </canvas>
+        <br>
+        <br>
+        <a class="buttonLink" href="#" id="downloadLink">Download Meme!</a><br>
+        <br>
+        <a href="">Make Another Meme!</a>
+    </div>
+    <br>
+    <br>
+
+    <hr>
+    <br>
+
+
+    <div class="small">
+        If the <b>Download!</b> button doesn't work,<br>
+        Right-Click (on the meme) &gt;&gt; Save as..<br>
+        <br>
+        To work offline,<br>
+        Right-Click (on the background) &gt;&gt; Save as..<br>
+        <br>
+    </div>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a><br><br><br>
+<!-- <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world"
+  data-size="large">
+Tweet</a>
+<iframe
+  src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&via=twitterdev&related=twitterapi%2Ctwitter&text=custom%20share%20text&hashtags=example%2Cdemo"
+  width="140"
+  height="28"
+  title="Twitter Tweet Button"
+  style="border: 0; overflow: hidden;">
+</iframe> -->
+<a class="twitter-share-button"
+  href="https://twitter.com/share"
+  data-size="large"
+  data-url="https://dev.twitter.com/web/tweet-button"
+  data-via="twitterdev"
+  data-related="twitterapi,twitter"
+  data-hashtags="example,demo"
+  data-text="custom share text">
+Tweet
+</a>
+<!-- <br>
+<a href="https://twitter.com/share?
+  url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&
+  via=twitterdev&
+  related=twitterapi%2Ctwitter&
+  hashtags=example%2Cdemo&
+  text=custom%20share%20text">
+Tweet
+</a> -->
+    <script>
+(function (document, FileReader, Image) {
+    "use strict";
+    var e = {}, // A container for DOM elements
+        reader = new FileReader(),
+        image = new Image(),
+        ctxt = null, // For canvas' 2d context
+        writeMeme = null, // For writing text on canvas
+        renderMeme = null, // For rendering meme on canvas
+        get = function (id) {
+            // Short for document.getElementById()
+            return document.getElementById(id);
+        };
+    // Get elements (by id):
+    e.box1 = get("box1");
+    e.ifile = get("ifile");
+    e.box2 = get("box2");
+    e.topline = get("topline");
+    e.bottomline = get("bottomline");
+    e.c = get("c"); // canvas;
+    e.downloadLink = get("downloadLink");
+    // Get canvas context:
+    ctxt = e.c.getContext("2d");
+    // Function to write text onto canvas:
+    writeMeme = function (text, x, y) {
+        var f = null; // Font size (in pt)
+        for (f = 36; f >= 0; f -= 1) {
+            ctxt.font = "bold " + f + "pt Impact, Charcoal, sans-serif";
+            if (ctxt.measureText(text).width < e.c.width - 10) {
+                ctxt.fillText(text, x, y);
+                ctxt.strokeText(text, x, y);
+                break;
+            }
+        }
+    };
+    // Function for rendering memes:
+    renderMeme = function () {
+        ctxt.drawImage(image, 0, 0, e.c.width, e.c.height);
+        writeMeme(e.topline.value, e.c.width / 2, 50);
+        writeMeme(e.bottomline.value, e.c.width / 2, e.c.height - 20);
+    };
+    // Event handlers:
+    e.ifile.onchange = function () {
+        reader.readAsDataURL(e.ifile.files[0]);
+        reader.onload = function () {
+            image.src = reader.result;
+            image.onload = function () {
+                // Canvas settings:
+                if (image.width < e.box1.clientWidth) {
+                    e.c.width = image.width;
+                    e.c.height = image.height;
+                } else {
+                    e.c.width = e.box1.clientWidth;
+                    e.c.height = image.height * (e.box1.clientWidth / image.width);
+                }
+                ctxt.textAlign = "center";
+                ctxt.fillStyle = "white";
+                ctxt.strokeStyle = "black";
+                ctxt.lineWidth = 2;
+                renderMeme();
+                e.box1.style.display = "none";
+                e.box2.style.display = "";
+            };
+        };
+    };
+    e.topline.onkeyup = renderMeme;
+    e.bottomline.onkeyup = renderMeme;
+    e.downloadLink.onclick = function () {
+        e.downloadLink.href = e.c.toDataURL();
+        e.downloadLink.download = "MemeFlow.png";
+    };
+}(this.document, this.FileReader, this.Image));
+    </script>
+</body>
+</html>
