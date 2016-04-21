@@ -1,0 +1,1305 @@
+body {
+  background-color: #000;
+}
+.p{
+  text-align: right;
+  font-size: 250%;
+  padding-top: 70%;
+  padding-left: 30%;
+  width: 60%;
+  color: orange;
+  position: relative;
+}
+p{
+  padding: 5%;
+  text-align: center;
+  background-color: blue;
+}
+.text{
+  border: 2px solid white;
+  position: absolute;
+
+}
+
+.container {
+  position: fixed;
+  margin: 500px;
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+}
+
+.dot:nth-child(0) {
+  -webkit-transform: translate3d(0px, 0px, 0) scale(0) rotate(0deg);
+          transform: translate3d(0px, 0px, 0) scale(0) rotate(0deg);
+  -webkit-animation: explode 1.5s 0ms alternate infinite, fadeOut 1.5s 0ms alternate infinite, rainbow 2s 0ms 5s;
+          animation: explode 1.5s 0ms alternate infinite, fadeOut 1.5s 0ms alternate infinite, rainbow 2s 0ms 5s;
+}
+
+.dot:nth-child(1) {
+  -webkit-transform: translate3d(-3.26822px, -3.78401px, 0) scale(0.33333) rotate(0deg);
+          transform: translate3d(-3.26822px, -3.78401px, 0) scale(0.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 20ms alternate infinite, fadeOut 1.5s 20ms alternate infinite, rainbow 2s 100ms 5s;
+          animation: explode 1.5s 20ms alternate infinite, fadeOut 1.5s 20ms alternate infinite, rainbow 2s 100ms 5s;
+}
+
+.dot:nth-child(2) {
+  -webkit-transform: translate3d(-1.455px, 9.89358px, 0) scale(0.66667) rotate(0deg);
+          transform: translate3d(-1.455px, 9.89358px, 0) scale(0.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 40ms alternate infinite, fadeOut 1.5s 40ms alternate infinite, rainbow 2s 200ms infinite;
+          animation: explode 1.5s 40ms alternate infinite, fadeOut 1.5s 40ms alternate infinite, rainbow 2s 200ms infinite;
+}
+
+.dot:nth-child(3) {
+  -webkit-transform: translate3d(12.65781px, -8.04859px, 0) scale(1) rotate(0deg);
+          transform: translate3d(12.65781px, -8.04859px, 0) scale(1) rotate(0deg);
+  -webkit-animation: explode 1.5s 60ms alternate infinite, fadeOut 1.5s 60ms alternate infinite, rainbow 2s 300ms infinite;
+          animation: explode 1.5s 60ms alternate infinite, fadeOut 1.5s 60ms alternate infinite, rainbow 2s 300ms infinite;
+}
+
+.dot:nth-child(4) {
+  -webkit-transform: translate3d(-19.15319px, -5.75807px, 0) scale(1.33333) rotate(0deg);
+          transform: translate3d(-19.15319px, -5.75807px, 0) scale(1.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 80ms alternate infinite, fadeOut 1.5s 80ms alternate infinite, rainbow 2s 400ms infinite;
+          animation: explode 1.5s 80ms alternate infinite, fadeOut 1.5s 80ms alternate infinite, rainbow 2s 400ms infinite;
+}
+
+.dot:nth-child(5) {
+  -webkit-transform: translate3d(10.20205px, 22.82363px, 0) scale(1.66667) rotate(0deg);
+          transform: translate3d(10.20205px, 22.82363px, 0) scale(1.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 100ms alternate infinite, fadeOut 1.5s 100ms alternate infinite, rainbow 2s 500ms infinite;
+          animation: explode 1.5s 100ms alternate infinite, fadeOut 1.5s 100ms alternate infinite, rainbow 2s 500ms infinite;
+}
+
+.dot:nth-child(6) {
+  -webkit-transform: translate3d(12.72537px, -27.16735px, 0) scale(2) rotate(0deg);
+          transform: translate3d(12.72537px, -27.16735px, 0) scale(2) rotate(0deg);
+  -webkit-animation: explode 1.5s 120ms alternate infinite, fadeOut 1.5s 120ms alternate infinite, rainbow 2s 600ms infinite;
+          animation: explode 1.5s 120ms alternate infinite, fadeOut 1.5s 120ms alternate infinite, rainbow 2s 600ms infinite;
+}
+
+.dot:nth-child(7) {
+  -webkit-transform: translate3d(-33.69121px, 9.4817px, 0) scale(2.33333) rotate(0deg);
+          transform: translate3d(-33.69121px, 9.4817px, 0) scale(2.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 140ms alternate infinite, fadeOut 1.5s 140ms alternate infinite, rainbow 2s 700ms infinite;
+          animation: explode 1.5s 140ms alternate infinite, fadeOut 1.5s 140ms alternate infinite, rainbow 2s 700ms infinite;
+}
+
+.dot:nth-child(8) {
+  -webkit-transform: translate3d(33.36893px, 22.05707px, 0) scale(2.66667) rotate(0deg);
+          transform: translate3d(33.36893px, 22.05707px, 0) scale(2.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 160ms alternate infinite, fadeOut 1.5s 160ms alternate infinite, rainbow 2s 800ms infinite;
+          animation: explode 1.5s 160ms alternate infinite, fadeOut 1.5s 160ms alternate infinite, rainbow 2s 800ms infinite;
+}
+
+.dot:nth-child(9) {
+  -webkit-transform: translate3d(-5.75837px, -44.63005px, 0) scale(3) rotate(0deg);
+          transform: translate3d(-5.75837px, -44.63005px, 0) scale(3) rotate(0deg);
+  -webkit-animation: explode 1.5s 180ms alternate infinite, fadeOut 1.5s 180ms alternate infinite, rainbow 2s 900ms infinite;
+          animation: explode 1.5s 180ms alternate infinite, fadeOut 1.5s 180ms alternate infinite, rainbow 2s 900ms infinite;
+}
+
+.dot:nth-child(10) {
+  -webkit-transform: translate3d(-33.3469px, 37.25566px, 0) scale(3.33333) rotate(0deg);
+          transform: translate3d(-33.3469px, 37.25566px, 0) scale(3.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 200ms alternate infinite, fadeOut 1.5s 200ms alternate infinite, rainbow 2s 1000ms infinite;
+          animation: explode 1.5s 200ms alternate infinite, fadeOut 1.5s 200ms alternate infinite, rainbow 2s 1000ms infinite;
+}
+
+.dot:nth-child(11) {
+  -webkit-transform: translate3d(54.99138px, 0.97361px, 0) scale(3.66667) rotate(0deg);
+          transform: translate3d(54.99138px, 0.97361px, 0) scale(3.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 220ms alternate infinite, fadeOut 1.5s 220ms alternate infinite, rainbow 2s 1100ms infinite;
+          animation: explode 1.5s 220ms alternate infinite, fadeOut 1.5s 220ms alternate infinite, rainbow 2s 1100ms infinite;
+}
+
+.dot:nth-child(12) {
+  -webkit-transform: translate3d(-38.40866px, -46.09528px, 0) scale(4) rotate(0deg);
+          transform: translate3d(-38.40866px, -46.09528px, 0) scale(4) rotate(0deg);
+  -webkit-animation: explode 1.5s 240ms alternate infinite, fadeOut 1.5s 240ms alternate infinite, rainbow 2s 1200ms infinite;
+          animation: explode 1.5s 240ms alternate infinite, fadeOut 1.5s 240ms alternate infinite, rainbow 2s 1200ms infinite;
+}
+
+.dot:nth-child(13) {
+  -webkit-transform: translate3d(-10.5944px, 64.13079px, 0) scale(4.33333) rotate(0deg);
+          transform: translate3d(-10.5944px, 64.13079px, 0) scale(4.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 260ms alternate infinite, fadeOut 1.5s 260ms alternate infinite, rainbow 2s 1300ms infinite;
+          animation: explode 1.5s 260ms alternate infinite, fadeOut 1.5s 260ms alternate infinite, rainbow 2s 1300ms infinite;
+}
+
+.dot:nth-child(14) {
+  -webkit-transform: translate3d(59.72541px, -36.50857px, 0) scale(4.66667) rotate(0deg);
+          transform: translate3d(59.72541px, -36.50857px, 0) scale(4.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 280ms alternate infinite, fadeOut 1.5s 280ms alternate infinite, rainbow 2s 1400ms infinite;
+          animation: explode 1.5s 280ms alternate infinite, fadeOut 1.5s 280ms alternate infinite, rainbow 2s 1400ms infinite;
+}
+
+.dot:nth-child(15) {
+  -webkit-transform: translate3d(-71.43097px, -22.8608px, 0) scale(5) rotate(0deg);
+          transform: translate3d(-71.43097px, -22.8608px, 0) scale(5) rotate(0deg);
+  -webkit-animation: explode 1.5s 300ms alternate infinite, fadeOut 1.5s 300ms alternate infinite, rainbow 2s 1500ms infinite;
+          animation: explode 1.5s 300ms alternate infinite, fadeOut 1.5s 300ms alternate infinite, rainbow 2s 1500ms infinite;
+}
+
+.dot:nth-child(16) {
+  -webkit-transform: translate3d(31.34858px, 73.60208px, 0) scale(5.33333) rotate(0deg);
+          transform: translate3d(31.34858px, 73.60208px, 0) scale(5.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 320ms alternate infinite, fadeOut 1.5s 320ms alternate infinite, rainbow 2s 1600ms infinite;
+          animation: explode 1.5s 320ms alternate infinite, fadeOut 1.5s 320ms alternate infinite, rainbow 2s 1600ms infinite;
+}
+
+.dot:nth-child(17) {
+  -webkit-transform: translate3d(37.41216px, -76.32385px, 0) scale(5.66667) rotate(0deg);
+          transform: translate3d(37.41216px, -76.32385px, 0) scale(5.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 340ms alternate infinite, fadeOut 1.5s 340ms alternate infinite, rainbow 2s 1700ms infinite;
+          animation: explode 1.5s 340ms alternate infinite, fadeOut 1.5s 340ms alternate infinite, rainbow 2s 1700ms infinite;
+}
+
+.dot:nth-child(18) {
+  -webkit-transform: translate3d(-87.05255px, 22.8441px, 0) scale(6) rotate(0deg);
+          transform: translate3d(-87.05255px, 22.8441px, 0) scale(6) rotate(0deg);
+  -webkit-animation: explode 1.5s 360ms alternate infinite, fadeOut 1.5s 360ms alternate infinite, rainbow 2s 1800ms infinite;
+          animation: explode 1.5s 360ms alternate infinite, fadeOut 1.5s 360ms alternate infinite, rainbow 2s 1800ms infinite;
+}
+
+.dot:nth-child(19) {
+  -webkit-transform: translate3d(78.31148px, 53.78023px, 0) scale(6.33333) rotate(0deg);
+          transform: translate3d(78.31148px, 53.78023px, 0) scale(6.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 380ms alternate infinite, fadeOut 1.5s 380ms alternate infinite, rainbow 2s 1900ms infinite;
+          animation: explode 1.5s 380ms alternate infinite, fadeOut 1.5s 380ms alternate infinite, rainbow 2s 1900ms infinite;
+}
+
+.dot:nth-child(20) {
+  -webkit-transform: translate3d(-11.03872px, -99.38887px, 0) scale(6.66667) rotate(0deg);
+          transform: translate3d(-11.03872px, -99.38887px, 0) scale(6.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 400ms alternate infinite, fadeOut 1.5s 400ms alternate infinite, rainbow 2s 2000ms infinite;
+          animation: explode 1.5s 400ms alternate infinite, fadeOut 1.5s 400ms alternate infinite, rainbow 2s 2000ms infinite;
+}
+
+.dot:nth-child(21) {
+  -webkit-transform: translate3d(-71.40247px, 76.98498px, 0) scale(7) rotate(0deg);
+          transform: translate3d(-71.40247px, 76.98498px, 0) scale(7) rotate(0deg);
+  -webkit-animation: explode 1.5s 420ms alternate infinite, fadeOut 1.5s 420ms alternate infinite, rainbow 2s 2100ms infinite;
+          animation: explode 1.5s 420ms alternate infinite, fadeOut 1.5s 420ms alternate infinite, rainbow 2s 2100ms infinite;
+}
+
+.dot:nth-child(22) {
+  -webkit-transform: translate3d(109.93106px, 3.89381px, 0) scale(7.33333) rotate(0deg);
+          transform: translate3d(109.93106px, 3.89381px, 0) scale(7.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 440ms alternate infinite, fadeOut 1.5s 440ms alternate infinite, rainbow 2s 2200ms infinite;
+          animation: explode 1.5s 440ms alternate infinite, fadeOut 1.5s 440ms alternate infinite, rainbow 2s 2200ms infinite;
+}
+
+.dot:nth-child(23) {
+  -webkit-transform: translate3d(-72.04111px, -89.6386px, 0) scale(7.66667) rotate(0deg);
+          transform: translate3d(-72.04111px, -89.6386px, 0) scale(7.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 460ms alternate infinite, fadeOut 1.5s 460ms alternate infinite, rainbow 2s 2300ms infinite;
+          animation: explode 1.5s 460ms alternate infinite, fadeOut 1.5s 460ms alternate infinite, rainbow 2s 2300ms infinite;
+}
+
+.dot:nth-child(24) {
+  -webkit-transform: translate3d(-21.65165px, 118.03053px, 0) scale(8) rotate(0deg);
+          transform: translate3d(-21.65165px, 118.03053px, 0) scale(8) rotate(0deg);
+  -webkit-animation: explode 1.5s 480ms alternate infinite, fadeOut 1.5s 480ms alternate infinite, rainbow 2s 2400ms infinite;
+          animation: explode 1.5s 480ms alternate infinite, fadeOut 1.5s 480ms alternate infinite, rainbow 2s 2400ms infinite;
+}
+
+.dot:nth-child(25) {
+  -webkit-transform: translate3d(107.78986px, -63.29571px, 0) scale(8.33333) rotate(0deg);
+          transform: translate3d(107.78986px, -63.29571px, 0) scale(8.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 500ms alternate infinite, fadeOut 1.5s 500ms alternate infinite, rainbow 2s 2500ms infinite;
+          animation: explode 1.5s 500ms alternate infinite, fadeOut 1.5s 500ms alternate infinite, rainbow 2s 2500ms infinite;
+}
+
+.dot:nth-child(26) {
+  -webkit-transform: translate3d(-123.09284px, -41.81091px, 0) scale(8.66667) rotate(0deg);
+          transform: translate3d(-123.09284px, -41.81091px, 0) scale(8.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 520ms alternate infinite, fadeOut 1.5s 520ms alternate infinite, rainbow 2s 2600ms infinite;
+          animation: explode 1.5s 520ms alternate infinite, fadeOut 1.5s 520ms alternate infinite, rainbow 2s 2600ms infinite;
+}
+
+.dot:nth-child(27) {
+  -webkit-transform: translate3d(50.6938px, 125.1205px, 0) scale(9) rotate(0deg);
+          transform: translate3d(50.6938px, 125.1205px, 0) scale(9) rotate(0deg);
+  -webkit-animation: explode 1.5s 540ms alternate infinite, fadeOut 1.5s 540ms alternate infinite, rainbow 2s 2700ms infinite;
+          animation: explode 1.5s 540ms alternate infinite, fadeOut 1.5s 540ms alternate infinite, rainbow 2s 2700ms infinite;
+}
+
+.dot:nth-child(28) {
+  -webkit-transform: translate3d(63.83567px, -124.59938px, 0) scale(9.33333) rotate(0deg);
+          transform: translate3d(63.83567px, -124.59938px, 0) scale(9.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 560ms alternate infinite, fadeOut 1.5s 560ms alternate infinite, rainbow 2s 2800ms infinite;
+          animation: explode 1.5s 560ms alternate infinite, fadeOut 1.5s 560ms alternate infinite, rainbow 2s 2800ms infinite;
+}
+
+.dot:nth-child(29) {
+  -webkit-transform: translate3d(-140.88087px, 34.3159px, 0) scale(9.66667) rotate(0deg);
+          transform: translate3d(-140.88087px, 34.3159px, 0) scale(9.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 580ms alternate infinite, fadeOut 1.5s 580ms alternate infinite, rainbow 2s 2900ms infinite;
+          animation: explode 1.5s 580ms alternate infinite, fadeOut 1.5s 580ms alternate infinite, rainbow 2s 2900ms infinite;
+}
+
+.dot:nth-child(30) {
+  -webkit-transform: translate3d(122.12715px, 87.09168px, 0) scale(10) rotate(0deg);
+          transform: translate3d(122.12715px, 87.09168px, 0) scale(10) rotate(0deg);
+  -webkit-animation: explode 1.5s 600ms alternate infinite, fadeOut 1.5s 600ms alternate infinite, rainbow 2s 3000ms infinite;
+          animation: explode 1.5s 600ms alternate infinite, fadeOut 1.5s 600ms alternate infinite, rainbow 2s 3000ms infinite;
+}
+
+.dot:nth-child(31) {
+  -webkit-transform: translate3d(-14.38031px, -154.33148px, 0) scale(10.33333) rotate(0deg);
+          transform: translate3d(-14.38031px, -154.33148px, 0) scale(10.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 620ms alternate infinite, fadeOut 1.5s 620ms alternate infinite, rainbow 2s 3100ms infinite;
+          animation: explode 1.5s 620ms alternate infinite, fadeOut 1.5s 620ms alternate infinite, rainbow 2s 3100ms infinite;
+}
+
+.dot:nth-child(32) {
+  -webkit-transform: translate3d(-110.86333px, 115.36603px, 0) scale(10.66667) rotate(0deg);
+          transform: translate3d(-110.86333px, 115.36603px, 0) scale(10.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 640ms alternate infinite, fadeOut 1.5s 640ms alternate infinite, rainbow 2s 3200ms infinite;
+          animation: explode 1.5s 640ms alternate infinite, fadeOut 1.5s 640ms alternate infinite, rainbow 2s 3200ms infinite;
+}
+
+.dot:nth-child(33) {
+  -webkit-transform: translate3d(164.76736px, 8.75879px, 0) scale(11) rotate(0deg);
+          transform: translate3d(164.76736px, 8.75879px, 0) scale(11) rotate(0deg);
+  -webkit-animation: explode 1.5s 660ms alternate infinite, fadeOut 1.5s 660ms alternate infinite, rainbow 2s 3300ms infinite;
+          animation: explode 1.5s 660ms alternate infinite, fadeOut 1.5s 660ms alternate infinite, rainbow 2s 3300ms infinite;
+}
+
+.dot:nth-child(34) {
+  -webkit-transform: translate3d(-104.1332px, -134.37365px, 0) scale(11.33333) rotate(0deg);
+          transform: translate3d(-104.1332px, -134.37365px, 0) scale(11.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 680ms alternate infinite, fadeOut 1.5s 680ms alternate infinite, rainbow 2s 3400ms infinite;
+          animation: explode 1.5s 680ms alternate infinite, fadeOut 1.5s 680ms alternate infinite, rainbow 2s 3400ms infinite;
+}
+
+.dot:nth-child(35) {
+  -webkit-transform: translate3d(-34.61738px, 171.54194px, 0) scale(11.66667) rotate(0deg);
+          transform: translate3d(-34.61738px, 171.54194px, 0) scale(11.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 700ms alternate infinite, fadeOut 1.5s 700ms alternate infinite, rainbow 2s 3500ms infinite;
+          animation: explode 1.5s 700ms alternate infinite, fadeOut 1.5s 700ms alternate infinite, rainbow 2s 3500ms infinite;
+}
+
+.dot:nth-child(36) {
+  -webkit-transform: translate3d(156.80653px, -88.38389px, 0) scale(12) rotate(0deg);
+          transform: translate3d(156.80653px, -88.38389px, 0) scale(12) rotate(0deg);
+  -webkit-animation: explode 1.5s 720ms alternate infinite, fadeOut 1.5s 720ms alternate infinite, rainbow 2s 3600ms infinite;
+          animation: explode 1.5s 720ms alternate infinite, fadeOut 1.5s 720ms alternate infinite, rainbow 2s 3600ms infinite;
+}
+
+.dot:nth-child(37) {
+  -webkit-transform: translate3d(-174.08987px, -62.59168px, 0) scale(12.33333) rotate(0deg);
+          transform: translate3d(-174.08987px, -62.59168px, 0) scale(12.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 740ms alternate infinite, fadeOut 1.5s 740ms alternate infinite, rainbow 2s 3700ms infinite;
+          animation: explode 1.5s 740ms alternate infinite, fadeOut 1.5s 740ms alternate infinite, rainbow 2s 3700ms infinite;
+}
+
+.dot:nth-child(38) {
+  -webkit-transform: translate3d(68.21841px, 177.3309px, 0) scale(12.66667) rotate(0deg);
+          transform: translate3d(68.21841px, 177.3309px, 0) scale(12.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 760ms alternate infinite, fadeOut 1.5s 760ms alternate infinite, rainbow 2s 3800ms infinite;
+          animation: explode 1.5s 760ms alternate infinite, fadeOut 1.5s 760ms alternate infinite, rainbow 2s 3800ms infinite;
+}
+
+.dot:nth-child(39) {
+  -webkit-transform: translate3d(91.9722px, -171.948px, 0) scale(13) rotate(0deg);
+          transform: translate3d(91.9722px, -171.948px, 0) scale(13) rotate(0deg);
+  -webkit-animation: explode 1.5s 780ms alternate infinite, fadeOut 1.5s 780ms alternate infinite, rainbow 2s 3900ms infinite;
+          animation: explode 1.5s 780ms alternate infinite, fadeOut 1.5s 780ms alternate infinite, rainbow 2s 3900ms infinite;
+}
+
+.dot:nth-child(40) {
+  -webkit-transform: translate3d(-195.12586px, 43.88505px, 0) scale(13.33333) rotate(0deg);
+          transform: translate3d(-195.12586px, 43.88505px, 0) scale(13.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 800ms alternate infinite, fadeOut 1.5s 800ms alternate infinite, rainbow 2s 4000ms infinite;
+          animation: explode 1.5s 800ms alternate infinite, fadeOut 1.5s 800ms alternate infinite, rainbow 2s 4000ms infinite;
+}
+
+.dot:nth-child(41) {
+  -webkit-transform: translate3d(164.77397px, 121.96122px, 0) scale(13.66667) rotate(0deg);
+          transform: translate3d(164.77397px, 121.96122px, 0) scale(13.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 820ms alternate infinite, fadeOut 1.5s 820ms alternate infinite, rainbow 2s 4100ms infinite;
+          animation: explode 1.5s 820ms alternate infinite, fadeOut 1.5s 820ms alternate infinite, rainbow 2s 4100ms infinite;
+}
+
+.dot:nth-child(42) {
+  -webkit-transform: translate3d(-15.77858px, -209.40639px, 0) scale(14) rotate(0deg);
+          transform: translate3d(-15.77858px, -209.40639px, 0) scale(14) rotate(0deg);
+  -webkit-animation: explode 1.5s 840ms alternate infinite, fadeOut 1.5s 840ms alternate infinite, rainbow 2s 4200ms infinite;
+          animation: explode 1.5s 840ms alternate infinite, fadeOut 1.5s 840ms alternate infinite, rainbow 2s 4200ms infinite;
+}
+
+.dot:nth-child(43) {
+  -webkit-transform: translate3d(-151.69347px, 152.36172px, 0) scale(14.33333) rotate(0deg);
+          transform: translate3d(-151.69347px, 152.36172px, 0) scale(14.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 860ms alternate infinite, fadeOut 1.5s 860ms alternate infinite, rainbow 2s 4300ms infinite;
+          animation: explode 1.5s 860ms alternate infinite, fadeOut 1.5s 860ms alternate infinite, rainbow 2s 4300ms infinite;
+}
+
+.dot:nth-child(44) {
+  -webkit-transform: translate3d(219.44866px, 15.56549px, 0) scale(14.66667) rotate(0deg);
+          transform: translate3d(219.44866px, 15.56549px, 0) scale(14.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 880ms alternate infinite, fadeOut 1.5s 880ms alternate infinite, rainbow 2s 4400ms infinite;
+          animation: explode 1.5s 880ms alternate infinite, fadeOut 1.5s 880ms alternate infinite, rainbow 2s 4400ms infinite;
+}
+
+.dot:nth-child(45) {
+  -webkit-transform: translate3d(-134.65352px, -180.25934px, 0) scale(15) rotate(0deg);
+          transform: translate3d(-134.65352px, -180.25934px, 0) scale(15) rotate(0deg);
+  -webkit-animation: explode 1.5s 900ms alternate infinite, fadeOut 1.5s 900ms alternate infinite, rainbow 2s 4500ms infinite;
+          animation: explode 1.5s 900ms alternate infinite, fadeOut 1.5s 900ms alternate infinite, rainbow 2s 4500ms infinite;
+}
+
+.dot:nth-child(46) {
+  -webkit-transform: translate3d(-49.48098px, 224.61441px, 0) scale(15.33333) rotate(0deg);
+          transform: translate3d(-49.48098px, 224.61441px, 0) scale(15.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 920ms alternate infinite, fadeOut 1.5s 920ms alternate infinite, rainbow 2s 4600ms infinite;
+          animation: explode 1.5s 920ms alternate infinite, fadeOut 1.5s 920ms alternate infinite, rainbow 2s 4600ms infinite;
+}
+
+.dot:nth-child(47) {
+  -webkit-transform: translate3d(206.73019px, -111.74806px, 0) scale(15.66667) rotate(0deg);
+          transform: translate3d(206.73019px, -111.74806px, 0) scale(15.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 940ms alternate infinite, fadeOut 1.5s 940ms alternate infinite, rainbow 2s 4700ms infinite;
+          animation: explode 1.5s 940ms alternate infinite, fadeOut 1.5s 940ms alternate infinite, rainbow 2s 4700ms infinite;
+}
+
+.dot:nth-child(48) {
+  -webkit-transform: translate3d(-224.37353px, -85.18521px, 0) scale(16) rotate(0deg);
+          transform: translate3d(-224.37353px, -85.18521px, 0) scale(16) rotate(0deg);
+  -webkit-animation: explode 1.5s 960ms alternate infinite, fadeOut 1.5s 960ms alternate infinite, rainbow 2s 4800ms infinite;
+          animation: explode 1.5s 960ms alternate infinite, fadeOut 1.5s 960ms alternate infinite, rainbow 2s 4800ms infinite;
+}
+
+.dot:nth-child(49) {
+  -webkit-transform: translate3d(83.90428px, 230.18486px, 0) scale(16.33333) rotate(0deg);
+          transform: translate3d(83.90428px, 230.18486px, 0) scale(16.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 980ms alternate infinite, fadeOut 1.5s 980ms alternate infinite, rainbow 2s 4900ms infinite;
+          animation: explode 1.5s 980ms alternate infinite, fadeOut 1.5s 980ms alternate infinite, rainbow 2s 4900ms infinite;
+}
+
+.dot:nth-child(50) {
+  -webkit-transform: translate3d(121.79692px, -218.32432px, 0) scale(16.66667) rotate(0deg);
+          transform: translate3d(121.79692px, -218.32432px, 0) scale(16.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1000ms alternate infinite, fadeOut 1.5s 1000ms alternate infinite, rainbow 2s 5000ms infinite;
+          animation: explode 1.5s 1000ms alternate infinite, fadeOut 1.5s 1000ms alternate infinite, rainbow 2s 5000ms infinite;
+}
+
+.dot:nth-child(51) {
+  -webkit-transform: translate3d(-249.73698px, 51.54069px, 0) scale(17) rotate(0deg);
+          transform: translate3d(-249.73698px, 51.54069px, 0) scale(17) rotate(0deg);
+  -webkit-animation: explode 1.5s 1020ms alternate infinite, fadeOut 1.5s 1020ms alternate infinite, rainbow 2s 5100ms infinite;
+          animation: explode 1.5s 1020ms alternate infinite, fadeOut 1.5s 1020ms alternate infinite, rainbow 2s 5100ms infinite;
+}
+
+.dot:nth-child(52) {
+  -webkit-transform: translate3d(206.2107px, 158.35766px, 0) scale(17.33333) rotate(0deg);
+          transform: translate3d(206.2107px, 158.35766px, 0) scale(17.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1040ms alternate infinite, fadeOut 1.5s 1040ms alternate infinite, rainbow 2s 5200ms infinite;
+          animation: explode 1.5s 1040ms alternate infinite, fadeOut 1.5s 1040ms alternate infinite, rainbow 2s 5200ms infinite;
+}
+
+.dot:nth-child(53) {
+  -webkit-transform: translate3d(-15.23019px, -264.56198px, 0) scale(17.66667) rotate(0deg);
+          transform: translate3d(-15.23019px, -264.56198px, 0) scale(17.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1060ms alternate infinite, fadeOut 1.5s 1060ms alternate infinite, rainbow 2s 5300ms infinite;
+          animation: explode 1.5s 1060ms alternate infinite, fadeOut 1.5s 1060ms alternate infinite, rainbow 2s 5300ms infinite;
+}
+
+.dot:nth-child(54) {
+  -webkit-transform: translate3d(-193.85597px, 187.93579px, 0) scale(18) rotate(0deg);
+          transform: translate3d(-193.85597px, 187.93579px, 0) scale(18) rotate(0deg);
+  -webkit-animation: explode 1.5s 1080ms alternate infinite, fadeOut 1.5s 1080ms alternate infinite, rainbow 2s 5400ms infinite;
+          animation: explode 1.5s 1080ms alternate infinite, fadeOut 1.5s 1080ms alternate infinite, rainbow 2s 5400ms infinite;
+}
+
+.dot:nth-child(55) {
+  -webkit-transform: translate3d(273.92342px, 24.30965px, 0) scale(18.33333) rotate(0deg);
+          transform: translate3d(273.92342px, 24.30965px, 0) scale(18.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1100ms alternate infinite, fadeOut 1.5s 1100ms alternate infinite, rainbow 2s 5500ms infinite;
+          animation: explode 1.5s 1100ms alternate infinite, fadeOut 1.5s 1100ms alternate infinite, rainbow 2s 5500ms infinite;
+}
+
+.dot:nth-child(56) {
+  -webkit-transform: translate3d(-163.57162px, -227.25388px, 0) scale(18.66667) rotate(0deg);
+          transform: translate3d(-163.57162px, -227.25388px, 0) scale(18.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1120ms alternate infinite, fadeOut 1.5s 1120ms alternate infinite, rainbow 2s 5600ms infinite;
+          animation: explode 1.5s 1120ms alternate infinite, fadeOut 1.5s 1120ms alternate infinite, rainbow 2s 5600ms infinite;
+}
+
+.dot:nth-child(57) {
+  -webkit-transform: translate3d(-66.2307px, 277.19757px, 0) scale(19) rotate(0deg);
+          transform: translate3d(-66.2307px, 277.19757px, 0) scale(19) rotate(0deg);
+  -webkit-animation: explode 1.5s 1140ms alternate infinite, fadeOut 1.5s 1140ms alternate infinite, rainbow 2s 5700ms infinite;
+          animation: explode 1.5s 1140ms alternate infinite, fadeOut 1.5s 1140ms alternate infinite, rainbow 2s 5700ms infinite;
+}
+
+.dot:nth-child(58) {
+  -webkit-transform: translate3d(257.515px, -133.36425px, 0) scale(19.33333) rotate(0deg);
+          transform: translate3d(257.515px, -133.36425px, 0) scale(19.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1160ms alternate infinite, fadeOut 1.5s 1160ms alternate infinite, rainbow 2s 5800ms infinite;
+          animation: explode 1.5s 1160ms alternate infinite, fadeOut 1.5s 1160ms alternate infinite, rainbow 2s 5800ms infinite;
+}
+
+.dot:nth-child(59) {
+  -webkit-transform: translate3d(-273.89574px, -109.57247px, 0) scale(19.66667) rotate(0deg);
+          transform: translate3d(-273.89574px, -109.57247px, 0) scale(19.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1180ms alternate infinite, fadeOut 1.5s 1180ms alternate infinite, rainbow 2s 5900ms infinite;
+          animation: explode 1.5s 1180ms alternate infinite, fadeOut 1.5s 1180ms alternate infinite, rainbow 2s 5900ms infinite;
+}
+
+.dot:nth-child(60) {
+  -webkit-transform: translate3d(97.73439px, 283.63355px, 0) scale(20) rotate(0deg);
+          transform: translate3d(97.73439px, 283.63355px, 0) scale(20) rotate(0deg);
+  -webkit-animation: explode 1.5s 1200ms alternate infinite, fadeOut 1.5s 1200ms alternate infinite, rainbow 2s 6000ms infinite;
+          animation: explode 1.5s 1200ms alternate infinite, fadeOut 1.5s 1200ms alternate infinite, rainbow 2s 6000ms infinite;
+}
+
+.dot:nth-child(61) {
+  -webkit-transform: translate3d(153.28397px, -263.68357px, 0) scale(20.33333) rotate(0deg);
+          transform: translate3d(153.28397px, -263.68357px, 0) scale(20.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1220ms alternate infinite, fadeOut 1.5s 1220ms alternate infinite, rainbow 2s 6100ms infinite;
+          animation: explode 1.5s 1220ms alternate infinite, fadeOut 1.5s 1220ms alternate infinite, rainbow 2s 6100ms infinite;
+}
+
+.dot:nth-child(62) {
+  -webkit-transform: translate3d(-304.6634px, 57.27316px, 0) scale(20.66667) rotate(0deg);
+          transform: translate3d(-304.6634px, 57.27316px, 0) scale(20.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1240ms alternate infinite, fadeOut 1.5s 1240ms alternate infinite, rainbow 2s 6200ms infinite;
+          animation: explode 1.5s 1240ms alternate infinite, fadeOut 1.5s 1240ms alternate infinite, rainbow 2s 6200ms infinite;
+}
+
+.dot:nth-child(63) {
+  -webkit-transform: translate3d(246.39681px, 196.24885px, 0) scale(21) rotate(0deg);
+          transform: translate3d(246.39681px, 196.24885px, 0) scale(21) rotate(0deg);
+  -webkit-animation: explode 1.5s 1260ms alternate infinite, fadeOut 1.5s 1260ms alternate infinite, rainbow 2s 6300ms infinite;
+          animation: explode 1.5s 1260ms alternate infinite, fadeOut 1.5s 1260ms alternate infinite, rainbow 2s 6300ms infinite;
+}
+
+.dot:nth-child(64) {
+  -webkit-transform: translate3d(-12.73304px, -319.74657px, 0) scale(21.33333) rotate(0deg);
+          transform: translate3d(-12.73304px, -319.74657px, 0) scale(21.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1280ms alternate infinite, fadeOut 1.5s 1280ms alternate infinite, rainbow 2s 6400ms infinite;
+          animation: explode 1.5s 1280ms alternate infinite, fadeOut 1.5s 1280ms alternate infinite, rainbow 2s 6400ms infinite;
+}
+
+.dot:nth-child(65) {
+  -webkit-transform: translate3d(-237.3131px, 222.0529px, 0) scale(21.66667) rotate(0deg);
+          transform: translate3d(-237.3131px, 222.0529px, 0) scale(21.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1300ms alternate infinite, fadeOut 1.5s 1300ms alternate infinite, rainbow 2s 6500ms infinite;
+          animation: explode 1.5s 1300ms alternate infinite, fadeOut 1.5s 1300ms alternate infinite, rainbow 2s 6500ms infinite;
+}
+
+.dot:nth-child(66) {
+  -webkit-transform: translate3d(328.14021px, 34.98577px, 0) scale(22) rotate(0deg);
+          transform: translate3d(328.14021px, 34.98577px, 0) scale(22) rotate(0deg);
+  -webkit-animation: explode 1.5s 1320ms alternate infinite, fadeOut 1.5s 1320ms alternate infinite, rainbow 2s 6600ms infinite;
+          animation: explode 1.5s 1320ms alternate infinite, fadeOut 1.5s 1320ms alternate infinite, rainbow 2s 6600ms infinite;
+}
+
+.dot:nth-child(67) {
+  -webkit-transform: translate3d(-190.85806px, -275.31473px, 0) scale(22.33333) rotate(0deg);
+          transform: translate3d(-190.85806px, -275.31473px, 0) scale(22.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1340ms alternate infinite, fadeOut 1.5s 1340ms alternate infinite, rainbow 2s 6700ms infinite;
+          animation: explode 1.5s 1340ms alternate infinite, fadeOut 1.5s 1340ms alternate infinite, rainbow 2s 6700ms infinite;
+}
+
+.dot:nth-child(68) {
+  -webkit-transform: translate3d(-84.85356px, 329.24136px, 0) scale(22.66667) rotate(0deg);
+          transform: translate3d(-84.85356px, 329.24136px, 0) scale(22.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1360ms alternate infinite, fadeOut 1.5s 1360ms alternate infinite, rainbow 2s 6800ms infinite;
+          animation: explode 1.5s 1360ms alternate infinite, fadeOut 1.5s 1360ms alternate infinite, rainbow 2s 6800ms infinite;
+}
+
+.dot:nth-child(69) {
+  -webkit-transform: translate3d(309.1146px, -153.20955px, 0) scale(23) rotate(0deg);
+          transform: translate3d(309.1146px, -153.20955px, 0) scale(23) rotate(0deg);
+  -webkit-animation: explode 1.5s 1380ms alternate infinite, fadeOut 1.5s 1380ms alternate infinite, rainbow 2s 6900ms infinite;
+          animation: explode 1.5s 1380ms alternate infinite, fadeOut 1.5s 1380ms alternate infinite, rainbow 2s 6900ms infinite;
+}
+
+.dot:nth-child(70) {
+  -webkit-transform: translate3d(-322.60885px, -135.7333px, 0) scale(23.33333) rotate(0deg);
+          transform: translate3d(-322.60885px, -135.7333px, 0) scale(23.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1400ms alternate infinite, fadeOut 1.5s 1400ms alternate infinite, rainbow 2s 7000ms infinite;
+          animation: explode 1.5s 1400ms alternate infinite, fadeOut 1.5s 1400ms alternate infinite, rainbow 2s 7000ms infinite;
+}
+
+.dot:nth-child(71) {
+  -webkit-transform: translate3d(109.69289px, 337.62771px, 0) scale(23.66667) rotate(0deg);
+          transform: translate3d(109.69289px, 337.62771px, 0) scale(23.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1420ms alternate infinite, fadeOut 1.5s 1420ms alternate infinite, rainbow 2s 7100ms infinite;
+          animation: explode 1.5s 1420ms alternate infinite, fadeOut 1.5s 1420ms alternate infinite, rainbow 2s 7100ms infinite;
+}
+
+.dot:nth-child(72) {
+  -webkit-transform: translate3d(186.40641px, -307.98157px, 0) scale(24) rotate(0deg);
+          transform: translate3d(186.40641px, -307.98157px, 0) scale(24) rotate(0deg);
+  -webkit-animation: explode 1.5s 1440ms alternate infinite, fadeOut 1.5s 1440ms alternate infinite, rainbow 2s 7200ms infinite;
+          animation: explode 1.5s 1440ms alternate infinite, fadeOut 1.5s 1440ms alternate infinite, rainbow 2s 7200ms infinite;
+}
+
+.dot:nth-child(73) {
+  -webkit-transform: translate3d(-359.85409px, 61.07398px, 0) scale(24.33333) rotate(0deg);
+          transform: translate3d(-359.85409px, 61.07398px, 0) scale(24.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1460ms alternate infinite, fadeOut 1.5s 1460ms alternate infinite, rainbow 2s 7300ms infinite;
+          animation: explode 1.5s 1460ms alternate infinite, fadeOut 1.5s 1460ms alternate infinite, rainbow 2s 7300ms infinite;
+}
+
+.dot:nth-child(74) {
+  -webkit-transform: translate3d(285.29258px, 235.60166px, 0) scale(24.66667) rotate(0deg);
+          transform: translate3d(285.29258px, 235.60166px, 0) scale(24.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1480ms alternate infinite, fadeOut 1.5s 1480ms alternate infinite, rainbow 2s 7400ms infinite;
+          animation: explode 1.5s 1480ms alternate infinite, fadeOut 1.5s 1480ms alternate infinite, rainbow 2s 7400ms infinite;
+}
+
+.dot:nth-child(75) {
+  -webkit-transform: translate3d(-8.28623px, -374.90844px, 0) scale(25) rotate(0deg);
+          transform: translate3d(-8.28623px, -374.90844px, 0) scale(25) rotate(0deg);
+  -webkit-animation: explode 1.5s 1500ms alternate infinite, fadeOut 1.5s 1500ms alternate infinite, rainbow 2s 7500ms infinite;
+          animation: explode 1.5s 1500ms alternate infinite, fadeOut 1.5s 1500ms alternate infinite, rainbow 2s 7500ms infinite;
+}
+
+.dot:nth-child(76) {
+  -webkit-transform: translate3d(-282.02627px, 254.67859px, 0) scale(25.33333) rotate(0deg);
+          transform: translate3d(-282.02627px, 254.67859px, 0) scale(25.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1520ms alternate infinite, fadeOut 1.5s 1520ms alternate infinite, rainbow 2s 7600ms infinite;
+          animation: explode 1.5s 1520ms alternate infinite, fadeOut 1.5s 1520ms alternate infinite, rainbow 2s 7600ms infinite;
+}
+
+.dot:nth-child(77) {
+  -webkit-transform: translate3d(382.04772px, 47.58717px, 0) scale(25.66667) rotate(0deg);
+          transform: translate3d(382.04772px, 47.58717px, 0) scale(25.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1540ms alternate infinite, fadeOut 1.5s 1540ms alternate infinite, rainbow 2s 7700ms infinite;
+          animation: explode 1.5s 1540ms alternate infinite, fadeOut 1.5s 1540ms alternate infinite, rainbow 2s 7700ms infinite;
+}
+
+.dot:nth-child(78) {
+  -webkit-transform: translate3d(-216.48441px, -324.39868px, 0) scale(26) rotate(0deg);
+          transform: translate3d(-216.48441px, -324.39868px, 0) scale(26) rotate(0deg);
+  -webkit-animation: explode 1.5s 1560ms alternate infinite, fadeOut 1.5s 1560ms alternate infinite, rainbow 2s 7800ms infinite;
+          animation: explode 1.5s 1560ms alternate infinite, fadeOut 1.5s 1560ms alternate infinite, rainbow 2s 7800ms infinite;
+}
+
+.dot:nth-child(79) {
+  -webkit-transform: translate3d(-105.33543px, 380.696px, 0) scale(26.33333) rotate(0deg);
+          transform: translate3d(-105.33543px, 380.696px, 0) scale(26.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1580ms alternate infinite, fadeOut 1.5s 1580ms alternate infinite, rainbow 2s 7900ms infinite;
+          animation: explode 1.5s 1580ms alternate infinite, fadeOut 1.5s 1580ms alternate infinite, rainbow 2s 7900ms infinite;
+}
+
+.dot:nth-child(80) {
+  -webkit-transform: translate3d(361.48204px, -171.26217px, 0) scale(26.66667) rotate(0deg);
+          transform: translate3d(361.48204px, -171.26217px, 0) scale(26.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1600ms alternate infinite, fadeOut 1.5s 1600ms alternate infinite, rainbow 2s 8000ms infinite;
+          animation: explode 1.5s 1600ms alternate infinite, fadeOut 1.5s 1600ms alternate infinite, rainbow 2s 8000ms infinite;
+}
+
+.dot:nth-child(81) {
+  -webkit-transform: translate3d(-370.46572px, -163.64641px, 0) scale(27) rotate(0deg);
+          transform: translate3d(-370.46572px, -163.64641px, 0) scale(27) rotate(0deg);
+  -webkit-animation: explode 1.5s 1620ms alternate infinite, fadeOut 1.5s 1620ms alternate infinite, rainbow 2s 8100ms infinite;
+          animation: explode 1.5s 1620ms alternate infinite, fadeOut 1.5s 1620ms alternate infinite, rainbow 2s 8100ms infinite;
+}
+
+.dot:nth-child(82) {
+  -webkit-transform: translate3d(119.76509px, 392.11774px, 0) scale(27.33333) rotate(0deg);
+          transform: translate3d(119.76509px, 392.11774px, 0) scale(27.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1640ms alternate infinite, fadeOut 1.5s 1640ms alternate infinite, rainbow 2s 8200ms infinite;
+          animation: explode 1.5s 1640ms alternate infinite, fadeOut 1.5s 1640ms alternate infinite, rainbow 2s 8200ms infinite;
+}
+
+.dot:nth-child(83) {
+  -webkit-transform: translate3d(221.13629px, -351.1748px, 0) scale(27.66667) rotate(0deg);
+          transform: translate3d(221.13629px, -351.1748px, 0) scale(27.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1660ms alternate infinite, fadeOut 1.5s 1660ms alternate infinite, rainbow 2s 8300ms infinite;
+          animation: explode 1.5s 1660ms alternate infinite, fadeOut 1.5s 1660ms alternate infinite, rainbow 2s 8300ms infinite;
+}
+
+.dot:nth-child(84) {
+  -webkit-transform: translate3d(-415.25784px, 62.93591px, 0) scale(28) rotate(0deg);
+          transform: translate3d(-415.25784px, 62.93591px, 0) scale(28) rotate(0deg);
+  -webkit-animation: explode 1.5s 1680ms alternate infinite, fadeOut 1.5s 1680ms alternate infinite, rainbow 2s 8400ms infinite;
+          animation: explode 1.5s 1680ms alternate infinite, fadeOut 1.5s 1680ms alternate infinite, rainbow 2s 8400ms infinite;
+}
+
+.dot:nth-child(85) {
+  -webkit-transform: translate3d(322.85903px, 276.38206px, 0) scale(28.33333) rotate(0deg);
+          transform: translate3d(322.85903px, 276.38206px, 0) scale(28.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1700ms alternate infinite, fadeOut 1.5s 1700ms alternate infinite, rainbow 2s 8500ms infinite;
+          animation: explode 1.5s 1700ms alternate infinite, fadeOut 1.5s 1700ms alternate infinite, rainbow 2s 8500ms infinite;
+}
+
+.dot:nth-child(86) {
+  -webkit-transform: translate3d(-1.89009px, -429.99585px, 0) scale(28.66667) rotate(0deg);
+          transform: translate3d(-1.89009px, -429.99585px, 0) scale(28.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1720ms alternate infinite, fadeOut 1.5s 1720ms alternate infinite, rainbow 2s 8600ms infinite;
+          animation: explode 1.5s 1720ms alternate infinite, fadeOut 1.5s 1720ms alternate infinite, rainbow 2s 8600ms infinite;
+}
+
+.dot:nth-child(87) {
+  -webkit-transform: translate3d(-327.9561px, 285.77928px, 0) scale(29) rotate(0deg);
+          transform: translate3d(-327.9561px, 285.77928px, 0) scale(29) rotate(0deg);
+  -webkit-animation: explode 1.5s 1740ms alternate infinite, fadeOut 1.5s 1740ms alternate infinite, rainbow 2s 8700ms infinite;
+          animation: explode 1.5s 1740ms alternate infinite, fadeOut 1.5s 1740ms alternate infinite, rainbow 2s 8700ms infinite;
+}
+
+.dot:nth-child(88) {
+  -webkit-transform: translate3d(435.59483px, 62.10593px, 0) scale(29.33333) rotate(0deg);
+          transform: translate3d(435.59483px, 62.10593px, 0) scale(29.33333) rotate(0deg);
+  -webkit-animation: explode 1.5s 1760ms alternate infinite, fadeOut 1.5s 1760ms alternate infinite, rainbow 2s 8800ms infinite;
+          animation: explode 1.5s 1760ms alternate infinite, fadeOut 1.5s 1760ms alternate infinite, rainbow 2s 8800ms infinite;
+}
+
+.dot:nth-child(89) {
+  -webkit-transform: translate3d(-240.42324px, -374.46184px, 0) scale(29.66667) rotate(0deg);
+          transform: translate3d(-240.42324px, -374.46184px, 0) scale(29.66667) rotate(0deg);
+  -webkit-animation: explode 1.5s 1780ms alternate infinite, fadeOut 1.5s 1780ms alternate infinite, rainbow 2s 8900ms infinite;
+          animation: explode 1.5s 1780ms alternate infinite, fadeOut 1.5s 1780ms alternate infinite, rainbow 2s 8900ms infinite;
+}
+
+.dot:nth-child(90) {
+  -webkit-transform: translate3d(-127.66099px, 431.51208px, 0) scale(30) rotate(0deg);
+          transform: translate3d(-127.66099px, 431.51208px, 0) scale(30) rotate(0deg);
+  -webkit-animation: explode 1.5s 1800ms alternate infinite, fadeOut 1.5s 1800ms alternate infinite, rainbow 2s 9000ms infinite;
+          animation: explode 1.5s 1800ms alternate infinite, fadeOut 1.5s 1800ms alternate infinite, rainbow 2s 9000ms infinite;
+}
+
+@-webkit-keyframes explode {
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(4) rotate(180deg);
+            transform: translate3d(0, 0, 0) scale(4) rotate(180deg);
+  }
+}
+
+@keyframes explode {
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(4) rotate(180deg);
+            transform: translate3d(0, 0, 0) scale(4) rotate(180deg);
+  }
+}
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  1% {
+    background-color: rgba(255, 11, 0, 0.5);
+  }
+  2% {
+    background-color: rgba(255, 22, 0, 0.5);
+  }
+  3% {
+    background-color: rgba(255, 33, 0, 0.5);
+  }
+  4% {
+    background-color: rgba(255, 43, 0, 0.5);
+  }
+  5% {
+    background-color: rgba(255, 54, 0, 0.5);
+  }
+  6% {
+    background-color: rgba(255, 65, 0, 0.5);
+  }
+  7% {
+    background-color: rgba(255, 76, 0, 0.5);
+  }
+  8% {
+    background-color: rgba(255, 87, 0, 0.5);
+  }
+  9% {
+    background-color: rgba(255, 98, 0, 0.5);
+  }
+  10% {
+    background-color: rgba(255, 108, 0, 0.5);
+  }
+  11% {
+    background-color: rgba(255, 119, 0, 0.5);
+  }
+  12% {
+    background-color: rgba(255, 130, 0, 0.5);
+  }
+  13% {
+    background-color: rgba(255, 141, 0, 0.5);
+  }
+  14% {
+    background-color: rgba(255, 152, 0, 0.5);
+  }
+  15% {
+    background-color: rgba(255, 163, 0, 0.5);
+  }
+  16% {
+    background-color: rgba(255, 173, 0, 0.5);
+  }
+  17% {
+    background-color: rgba(255, 184, 0, 0.5);
+  }
+  18% {
+    background-color: rgba(255, 195, 0, 0.5);
+  }
+  19% {
+    background-color: rgba(255, 206, 0, 0.5);
+  }
+  20% {
+    background-color: rgba(255, 217, 0, 0.5);
+  }
+  21% {
+    background-color: rgba(255, 228, 0, 0.5);
+  }
+  22% {
+    background-color: rgba(255, 238, 0, 0.5);
+  }
+  23% {
+    background-color: rgba(255, 249, 0, 0.5);
+  }
+  24% {
+    background-color: rgba(250, 255, 0, 0.5);
+  }
+  25% {
+    background-color: rgba(239, 255, 0, 0.5);
+  }
+  26% {
+    background-color: rgba(228, 255, 0, 0.5);
+  }
+  27% {
+    background-color: rgba(217, 255, 0, 0.5);
+  }
+  28% {
+    background-color: rgba(207, 255, 0, 0.5);
+  }
+  29% {
+    background-color: rgba(196, 255, 0, 0.5);
+  }
+  30% {
+    background-color: rgba(185, 255, 0, 0.5);
+  }
+  31% {
+    background-color: rgba(174, 255, 0, 0.5);
+  }
+  32% {
+    background-color: rgba(163, 255, 0, 0.5);
+  }
+  33% {
+    background-color: rgba(152, 255, 0, 0.5);
+  }
+  34% {
+    background-color: rgba(142, 255, 0, 0.5);
+  }
+  35% {
+    background-color: rgba(131, 255, 0, 0.5);
+  }
+  36% {
+    background-color: rgba(120, 255, 0, 0.5);
+  }
+  37% {
+    background-color: rgba(109, 255, 0, 0.5);
+  }
+  38% {
+    background-color: rgba(98, 255, 0, 0.5);
+  }
+  39% {
+    background-color: rgba(87, 255, 0, 0.5);
+  }
+  40% {
+    background-color: rgba(77, 255, 0, 0.5);
+  }
+  41% {
+    background-color: rgba(66, 255, 0, 0.5);
+  }
+  42% {
+    background-color: rgba(55, 255, 0, 0.5);
+  }
+  43% {
+    background-color: rgba(44, 255, 0, 0.5);
+  }
+  44% {
+    background-color: rgba(33, 255, 0, 0.5);
+  }
+  45% {
+    background-color: rgba(22, 255, 0, 0.5);
+  }
+  46% {
+    background-color: rgba(11, 255, 0, 0.5);
+  }
+  47% {
+    background-color: rgba(1, 255, 0, 0.5);
+  }
+  48% {
+    background-color: rgba(0, 255, 10, 0.5);
+  }
+  49% {
+    background-color: rgba(0, 255, 21, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 255, 32, 0.5);
+  }
+  51% {
+    background-color: rgba(0, 255, 43, 0.5);
+  }
+  52% {
+    background-color: rgba(0, 255, 54, 0.5);
+  }
+  53% {
+    background-color: rgba(0, 255, 64, 0.5);
+  }
+  54% {
+    background-color: rgba(0, 255, 75, 0.5);
+  }
+  55% {
+    background-color: rgba(0, 255, 86, 0.5);
+  }
+  56% {
+    background-color: rgba(0, 255, 97, 0.5);
+  }
+  57% {
+    background-color: rgba(0, 255, 108, 0.5);
+  }
+  58% {
+    background-color: rgba(0, 255, 119, 0.5);
+  }
+  59% {
+    background-color: rgba(0, 255, 129, 0.5);
+  }
+  60% {
+    background-color: rgba(0, 255, 140, 0.5);
+  }
+  61% {
+    background-color: rgba(0, 255, 151, 0.5);
+  }
+  62% {
+    background-color: rgba(0, 255, 162, 0.5);
+  }
+  63% {
+    background-color: rgba(0, 255, 173, 0.5);
+  }
+  64% {
+    background-color: rgba(0, 255, 184, 0.5);
+  }
+  65% {
+    background-color: rgba(0, 255, 194, 0.5);
+  }
+  66% {
+    background-color: rgba(0, 255, 205, 0.5);
+  }
+  67% {
+    background-color: rgba(0, 255, 216, 0.5);
+  }
+  68% {
+    background-color: rgba(0, 255, 227, 0.5);
+  }
+  69% {
+    background-color: rgba(0, 255, 238, 0.5);
+  }
+  70% {
+    background-color: rgba(0, 255, 249, 0.5);
+  }
+  71% {
+    background-color: rgba(0, 251, 255, 0.5);
+  }
+  72% {
+    background-color: rgba(0, 240, 255, 0.5);
+  }
+  73% {
+    background-color: rgba(0, 229, 255, 0.5);
+  }
+  74% {
+    background-color: rgba(0, 218, 255, 0.5);
+  }
+  75% {
+    background-color: rgba(0, 207, 255, 0.5);
+  }
+  76% {
+    background-color: rgba(0, 196, 255, 0.5);
+  }
+  77% {
+    background-color: rgba(0, 186, 255, 0.5);
+  }
+  78% {
+    background-color: rgba(0, 175, 255, 0.5);
+  }
+  79% {
+    background-color: rgba(0, 164, 255, 0.5);
+  }
+  80% {
+    background-color: rgba(0, 153, 255, 0.5);
+  }
+  81% {
+    background-color: rgba(0, 142, 255, 0.5);
+  }
+  82% {
+    background-color: rgba(0, 131, 255, 0.5);
+  }
+  83% {
+    background-color: rgba(0, 120, 255, 0.5);
+  }
+  84% {
+    background-color: rgba(0, 110, 255, 0.5);
+  }
+  85% {
+    background-color: rgba(0, 99, 255, 0.5);
+  }
+  86% {
+    background-color: rgba(0, 88, 255, 0.5);
+  }
+  87% {
+    background-color: rgba(0, 77, 255, 0.5);
+  }
+  88% {
+    background-color: rgba(0, 66, 255, 0.5);
+  }
+  89% {
+    background-color: rgba(0, 55, 255, 0.5);
+  }
+  90% {
+    background-color: rgba(0, 45, 255, 0.5);
+  }
+  91% {
+    background-color: rgba(0, 34, 255, 0.5);
+  }
+  92% {
+    background-color: rgba(0, 23, 255, 0.5);
+  }
+  93% {
+    background-color: rgba(0, 12, 255, 0.5);
+  }
+  94% {
+    background-color: rgba(0, 1, 255, 0.5);
+  }
+  95% {
+    background-color: rgba(10, 0, 255, 0.5);
+  }
+  96% {
+    background-color: rgba(20, 0, 255, 0.5);
+  }
+  97% {
+    background-color: rgba(31, 0, 255, 0.5);
+  }
+  98% {
+    background-color: rgba(42, 0, 255, 0.5);
+  }
+  99% {
+    background-color: rgba(53, 0, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(64, 0, 255, 0.5);
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  1% {
+    background-color: rgba(255, 11, 0, 0.5);
+  }
+  2% {
+    background-color: rgba(255, 22, 0, 0.5);
+  }
+  3% {
+    background-color: rgba(255, 33, 0, 0.5);
+  }
+  4% {
+    background-color: rgba(255, 43, 0, 0.5);
+  }
+  5% {
+    background-color: rgba(255, 54, 0, 0.5);
+  }
+  6% {
+    background-color: rgba(255, 65, 0, 0.5);
+  }
+  7% {
+    background-color: rgba(255, 76, 0, 0.5);
+  }
+  8% {
+    background-color: rgba(255, 87, 0, 0.5);
+  }
+  9% {
+    background-color: rgba(255, 98, 0, 0.5);
+  }
+  10% {
+    background-color: rgba(255, 108, 0, 0.5);
+  }
+  11% {
+    background-color: rgba(255, 119, 0, 0.5);
+  }
+  12% {
+    background-color: rgba(255, 130, 0, 0.5);
+  }
+  13% {
+    background-color: rgba(255, 141, 0, 0.5);
+  }
+  14% {
+    background-color: rgba(255, 152, 0, 0.5);
+  }
+  15% {
+    background-color: rgba(255, 163, 0, 0.5);
+  }
+  16% {
+    background-color: rgba(255, 173, 0, 0.5);
+  }
+  17% {
+    background-color: rgba(255, 184, 0, 0.5);
+  }
+  18% {
+    background-color: rgba(255, 195, 0, 0.5);
+  }
+  19% {
+    background-color: rgba(255, 206, 0, 0.5);
+  }
+  20% {
+    background-color: rgba(255, 217, 0, 0.5);
+  }
+  21% {
+    background-color: rgba(255, 228, 0, 0.5);
+  }
+  22% {
+    background-color: rgba(255, 238, 0, 0.5);
+  }
+  23% {
+    background-color: rgba(255, 249, 0, 0.5);
+  }
+  24% {
+    background-color: rgba(250, 255, 0, 0.5);
+  }
+  25% {
+    background-color: rgba(239, 255, 0, 0.5);
+  }
+  26% {
+    background-color: rgba(228, 255, 0, 0.5);
+  }
+  27% {
+    background-color: rgba(217, 255, 0, 0.5);
+  }
+  28% {
+    background-color: rgba(207, 255, 0, 0.5);
+  }
+  29% {
+    background-color: rgba(196, 255, 0, 0.5);
+  }
+  30% {
+    background-color: rgba(185, 255, 0, 0.5);
+  }
+  31% {
+    background-color: rgba(174, 255, 0, 0.5);
+  }
+  32% {
+    background-color: rgba(163, 255, 0, 0.5);
+  }
+  33% {
+    background-color: rgba(152, 255, 0, 0.5);
+  }
+  34% {
+    background-color: rgba(142, 255, 0, 0.5);
+  }
+  35% {
+    background-color: rgba(131, 255, 0, 0.5);
+  }
+  36% {
+    background-color: rgba(120, 255, 0, 0.5);
+  }
+  37% {
+    background-color: rgba(109, 255, 0, 0.5);
+  }
+  38% {
+    background-color: rgba(98, 255, 0, 0.5);
+  }
+  39% {
+    background-color: rgba(87, 255, 0, 0.5);
+  }
+  40% {
+    background-color: rgba(77, 255, 0, 0.5);
+  }
+  41% {
+    background-color: rgba(66, 255, 0, 0.5);
+  }
+  42% {
+    background-color: rgba(55, 255, 0, 0.5);
+  }
+  43% {
+    background-color: rgba(44, 255, 0, 0.5);
+  }
+  44% {
+    background-color: rgba(33, 255, 0, 0.5);
+  }
+  45% {
+    background-color: rgba(22, 255, 0, 0.5);
+  }
+  46% {
+    background-color: rgba(11, 255, 0, 0.5);
+  }
+  47% {
+    background-color: rgba(1, 255, 0, 0.5);
+  }
+  48% {
+    background-color: rgba(0, 255, 10, 0.5);
+  }
+  49% {
+    background-color: rgba(0, 255, 21, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 255, 32, 0.5);
+  }
+  51% {
+    background-color: rgba(0, 255, 43, 0.5);
+  }
+  52% {
+    background-color: rgba(0, 255, 54, 0.5);
+  }
+  53% {
+    background-color: rgba(0, 255, 64, 0.5);
+  }
+  54% {
+    background-color: rgba(0, 255, 75, 0.5);
+  }
+  55% {
+    background-color: rgba(0, 255, 86, 0.5);
+  }
+  56% {
+    background-color: rgba(0, 255, 97, 0.5);
+  }
+  57% {
+    background-color: rgba(0, 255, 108, 0.5);
+  }
+  58% {
+    background-color: rgba(0, 255, 119, 0.5);
+  }
+  59% {
+    background-color: rgba(0, 255, 129, 0.5);
+  }
+  60% {
+    background-color: rgba(0, 255, 140, 0.5);
+  }
+  61% {
+    background-color: rgba(0, 255, 151, 0.5);
+  }
+  62% {
+    background-color: rgba(0, 255, 162, 0.5);
+  }
+  63% {
+    background-color: rgba(0, 255, 173, 0.5);
+  }
+  64% {
+    background-color: rgba(0, 255, 184, 0.5);
+  }
+  65% {
+    background-color: rgba(0, 255, 194, 0.5);
+  }
+  66% {
+    background-color: rgba(0, 255, 205, 0.5);
+  }
+  67% {
+    background-color: rgba(0, 255, 216, 0.5);
+  }
+  68% {
+    background-color: rgba(0, 255, 227, 0.5);
+  }
+  69% {
+    background-color: rgba(0, 255, 238, 0.5);
+  }
+  70% {
+    background-color: rgba(0, 255, 249, 0.5);
+  }
+  71% {
+    background-color: rgba(0, 251, 255, 0.5);
+  }
+  72% {
+    background-color: rgba(0, 240, 255, 0.5);
+  }
+  73% {
+    background-color: rgba(0, 229, 255, 0.5);
+  }
+  74% {
+    background-color: rgba(0, 218, 255, 0.5);
+  }
+  75% {
+    background-color: rgba(0, 207, 255, 0.5);
+  }
+  76% {
+    background-color: rgba(0, 196, 255, 0.5);
+  }
+  77% {
+    background-color: rgba(0, 186, 255, 0.5);
+  }
+  78% {
+    background-color: rgba(0, 175, 255, 0.5);
+  }
+  79% {
+    background-color: rgba(0, 164, 255, 0.5);
+  }
+  80% {
+    background-color: rgba(0, 153, 255, 0.5);
+  }
+  81% {
+    background-color: rgba(0, 142, 255, 0.5);
+  }
+  82% {
+    background-color: rgba(0, 131, 255, 0.5);
+  }
+  83% {
+    background-color: rgba(0, 120, 255, 0.5);
+  }
+  84% {
+    background-color: rgba(0, 110, 255, 0.5);
+  }
+  85% {
+    background-color: rgba(0, 99, 255, 0.5);
+  }
+  86% {
+    background-color: rgba(0, 88, 255, 0.5);
+  }
+  87% {
+    background-color: rgba(0, 77, 255, 0.5);
+  }
+  88% {
+    background-color: rgba(0, 66, 255, 0.5);
+  }
+  89% {
+    background-color: rgba(0, 55, 255, 0.5);
+  }
+  90% {
+    background-color: rgba(0, 45, 255, 0.5);
+  }
+  91% {
+    background-color: rgba(0, 34, 255, 0.5);
+  }
+  92% {
+    background-color: rgba(0, 23, 255, 0.5);
+  }
+  93% {
+    background-color: rgba(0, 12, 255, 0.5);
+  }
+  94% {
+    background-color: rgba(0, 1, 255, 0.5);
+  }
+  95% {
+    background-color: rgba(10, 0, 255, 0.5);
+  }
+  96% {
+    background-color: rgba(20, 0, 255, 0.5);
+  }
+  97% {
+    background-color: rgba(31, 0, 255, 0.5);
+  }
+  98% {
+    background-color: rgba(42, 0, 255, 0.5);
+  }
+  99% {
+    background-color: rgba(53, 0, 255, 0.5);
+  }
+  100% {
+    background-color: rgba(64, 0, 255, 0.5);
+  }
+}
