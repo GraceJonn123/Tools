@@ -1,0 +1,70 @@
+div {
+    width: 326px;
+    height: 244px;
+    border: 0;
+    float: left;
+    overflow: hidden;
+}
+.t1 {
+    background-image: url(http://img511.imageshack.us/img511/8963/blackchococakexxsmall.jpg);
+}
+.t2 {
+    background-image: url(http://img412.imageshack.us/img412/7626/blackforesticecreamxxsm.jpg);
+}
+.t3 {
+    background-image: url(http://img401.imageshack.us/img401/6011/butterflychocowcherryli.jpg);
+}
+.t4 {
+    background-image: url(http://img508.imageshack.us/img508/16/chocolatinexxsmall.jpg);
+}
+.t5 {
+    background-image: url(http://img24.imageshack.us/img24/4968/kprofiterolexxsmall.jpg);
+}
+.t6 {
+    background-image: url(http://img39.imageshack.us/img39/3351/macaronsxxsmalldnh.jpg);
+}
+.t7 {
+    background-image: url(http://img64.imageshack.us/img64/318/plumcaramelchocomousxsm.jpg);
+}
+a {
+    width: 408px;
+    height: 408px;
+    margin-left: -41px;
+    margin-top: -82px;
+    border: solid 204px rgba(255, 127, 63, .7);
+    -moz-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    -webkit-transition: border .7s linear;
+    -moz-transition: border .7s linear;
+    -ms-transition: border .7s linear;
+    -o-transition: border .7s linear;
+    transition: border .7s linear;
+}
+.t1 a:hover {
+    border: solid 0 rgba(0, 0, 0, 0);
+}
+.t2 a:hover {
+    border: double 0 rgba(0, 0, 0, 0);
+}
+.t3 a:hover {
+    border: dashed 0 rgba(0, 0, 0, 0);
+}
+.t4 a:hover {
+    border: dotted 0 rgba(0, 0, 0, 0);
+}
+.t5 a:hover {
+    border: inset 0 rgba(0, 0, 0, 0);
+}
+.t6 a:hover {
+    border: dotted 102px rgba(0, 0, 0, 0);
+}
+.t7 a:hover {
+    border: ridge 0 rgba(0, 0, 0, 0);
+}
